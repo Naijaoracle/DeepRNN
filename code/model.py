@@ -265,7 +265,7 @@ class Model(object):
 
         if "src2tgt" in directions:
             src2tgt_loss, src2tgt_output = self.compute_loss(hparams, direction="src2tgt", lstm_input_given=None,
-                                                             ref_given=None, seq_len_given=None,
+                                                             ref_given=None, seq_len_given=None,)
         forward_loss = src2tgt_loss
         return forward_loss, src2tgt_output
 
